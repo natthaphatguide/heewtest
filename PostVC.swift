@@ -10,26 +10,20 @@ import UIKit
 
 class PostVC: UIViewController {
 
+    @IBOutlet weak var brandField: UITextField!
+    @IBOutlet weak var priceField: UITextField!
+    @IBOutlet weak var carryFeeField: UITextField!
+    @IBOutlet weak var eventNameField: UITextField!
+    
+    //ปุ่มจะไปเลือก category ใน array
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func postBtnPress(_ sender: Any) {
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
