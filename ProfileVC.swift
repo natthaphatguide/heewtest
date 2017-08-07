@@ -25,6 +25,8 @@ class ProfileVC: UIViewController {
     }
 
     @IBAction func logoutBtnPress(_ sender: Any) {
+        try! Auth.auth().signOut()
+        performSegue(withIdentifier: "goToSignInVC", sender: nil)
     }
    
 }

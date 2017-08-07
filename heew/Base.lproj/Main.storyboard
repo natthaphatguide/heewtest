@@ -83,7 +83,6 @@
                                 </state>
                                 <connections>
                                     <action selector="loginBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XZj-3O-sLU"/>
-                                    <segue destination="BdW-FF-NZX" kind="show" identifier="goToTabberVC" id="rWB-kp-OFj"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="หรือ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dy4-Sd-SmX">
@@ -113,6 +112,7 @@
                     <connections>
                         <outlet property="emailField" destination="cMr-Ex-nup" id="cQg-6v-pIe"/>
                         <outlet property="passwordField" destination="a5s-xq-EV9" id="XqB-B2-jtT"/>
+                        <segue destination="BdW-FF-NZX" kind="show" identifier="goToTabberVC" id="I4l-ch-TPI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

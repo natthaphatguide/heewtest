@@ -2,30 +2,26 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSCameraUsageDescription</key>
-	<string>To take photos for selling items</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>To upload photos for selling items</string>
 	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
 	<string>ca-app-pub-3940256099942544/2934735716</string>
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>756570793935-cgolq7julv6pd20ldhu9o6jhojogdedc.apps.googleusercontent.com</string>
+	<string>322798132419-c8kagdi909or76scd5kmeurh5cdcpa53.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.756570793935-cgolq7julv6pd20ldhu9o6jhojogdedc</string>
+	<string>com.googleusercontent.apps.322798132419-c8kagdi909or76scd5kmeurh5cdcpa53</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBlfZvaPc5vaMqx3qmSZNElhJdv0w2pwa0</string>
+	<string>AIzaSyD7P6MmIHcc7aWzv_36tY0jY3b33UDzuKs</string>
 	<key>GCM_SENDER_ID</key>
-	<string>756570793935</string>
+	<string>322798132419</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>co.heew.heew</string>
+	<string>co.heew.heewapp</string>
 	<key>PROJECT_ID</key>
-	<string>heewapp-ea7bb</string>
+	<string>heewapp-45ba6</string>
 	<key>STORAGE_BUCKET</key>
-	<string>heewapp-ea7bb.appspot.com</string>
+	<string>heewapp-45ba6.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -37,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:756570793935:ios:526a3e219d91181b</string>
+	<string>1:322798132419:ios:e88bcec2cd885fb2</string>
 	<key>DATABASE_URL</key>
-	<string>https://heewapp-ea7bb.firebaseio.com</string>
+	<string>https://heewapp-45ba6.firebaseio.com</string>
 </dict>
 </plist>
