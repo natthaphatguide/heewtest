@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		658A81C21F3830CB00234035 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A81C11F3830CB00234035 /* SignInVC.swift */; };
+		658A81C41F3830E000234035 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A81C31F3830E000234035 /* SignUpVC.swift */; };
+		658A81C61F3830EE00234035 /* EventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A81C51F3830EE00234035 /* EventVC.swift */; };
+		658A81C81F38310B00234035 /* ProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A81C71F38310B00234035 /* ProductVC.swift */; };
+		658A81CA1F38311F00234035 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A81C91F38311F00234035 /* NotificationVC.swift */; };
+		658A81CC1F38312800234035 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A81CB1F38312800234035 /* PostVC.swift */; };
+		658A81CE1F38313A00234035 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A81CD1F38313A00234035 /* ProfileVC.swift */; };
 		65BE4B951F36BEE9006442C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE4B941F36BEE9006442C7 /* AppDelegate.swift */; };
 		65BE4B971F36BEE9006442C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE4B961F36BEE9006442C7 /* ViewController.swift */; };
 		65BE4B9A1F36BEE9006442C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BE4B981F36BEE9006442C7 /* Main.storyboard */; };
@@ -18,6 +25,13 @@
 
 /* Begin PBXFileReference section */
 		0DD577F9F72C1622C87B260F /* Pods_heew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_heew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		658A81C11F3830CB00234035 /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		658A81C31F3830E000234035 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		658A81C51F3830EE00234035 /* EventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventVC.swift; sourceTree = "<group>"; };
+		658A81C71F38310B00234035 /* ProductVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductVC.swift; sourceTree = "<group>"; };
+		658A81C91F38311F00234035 /* NotificationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		658A81CB1F38312800234035 /* PostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		658A81CD1F38313A00234035 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		65BE4B911F36BEE9006442C7 /* heew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = heew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BE4B941F36BEE9006442C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65BE4B961F36BEE9006442C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,9 +56,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		658A81C01F3830A700234035 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				658A81C11F3830CB00234035 /* SignInVC.swift */,
+				658A81C31F3830E000234035 /* SignUpVC.swift */,
+				658A81C51F3830EE00234035 /* EventVC.swift */,
+				658A81C71F38310B00234035 /* ProductVC.swift */,
+				658A81CB1F38312800234035 /* PostVC.swift */,
+				658A81C91F38311F00234035 /* NotificationVC.swift */,
+				658A81CD1F38313A00234035 /* ProfileVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		65BE4B881F36BEE9006442C7 = {
 			isa = PBXGroup;
 			children = (
+				658A81C01F3830A700234035 /* Controller */,
 				65BE4B931F36BEE9006442C7 /* heew */,
 				65BE4B921F36BEE9006442C7 /* Products */,
 				81D981E9ADE25CF312B63F7F /* Pods */,
@@ -215,8 +244,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658A81C81F38310B00234035 /* ProductVC.swift in Sources */,
+				658A81C41F3830E000234035 /* SignUpVC.swift in Sources */,
 				65BE4B971F36BEE9006442C7 /* ViewController.swift in Sources */,
+				658A81CE1F38313A00234035 /* ProfileVC.swift in Sources */,
+				658A81C61F3830EE00234035 /* EventVC.swift in Sources */,
 				65BE4B951F36BEE9006442C7 /* AppDelegate.swift in Sources */,
+				658A81C21F3830CB00234035 /* SignInVC.swift in Sources */,
+				658A81CC1F38312800234035 /* PostVC.swift in Sources */,
+				658A81CA1F38311F00234035 /* NotificationVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +418,7 @@
 				65BE4BA51F36BEEA006442C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
