@@ -22,7 +22,7 @@ class SignInVC: UIViewController {
     }
     
     @IBAction func loginBtnPressed(_ sender: Any) {
-        Auth.auth.signIn
+
     }
 
     @IBAction func facebookBtnPressed(_ sender: Any) {
