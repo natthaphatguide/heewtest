@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import Firebase
 import FBSDKLoginKit
+import FirebaseAuth
 
 class SignInVC: UIViewController {
 
@@ -19,7 +19,7 @@ class SignInVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
+ 
     @IBAction func loginBtnPressed(_ sender: Any) {
         if let email = emailField.text, let password = passwordField.text {
             Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
