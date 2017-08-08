@@ -24,9 +24,22 @@ class SignInVC: UIViewController {
         if let email = emailField.text, let password = passwordField.text {
             Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
                 if error == nil {
+                    self.performSegue(withIdentifier: "goToTabberVC", sender: nil)
                     print ("HEEWADMIN: Successfully login with email")
                 } else {
-                    print ("HEEWADMIN: Error to login")
+                    // Create new user if Auth failed.
+                    Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
+                        if error != nil {
+                            print("GUIDE: Unable to authenticate with Firebase using email")
+                        } else {
+                            
+                            if let user = user {
+                                let userData = ["provider": user.providerID, "User": email]
+                                self.completeSignIn(id: user.uid, userData: userData)
+                                print ("HEEWADMIN: Error to login ==> Create new user")
+                            }
+                        }
+                    })
                 }
             })
         }
@@ -59,4 +72,14 @@ class SignInVC: UIViewController {
         })
     }
     
+    // Development only for create user info in database
+    func completeSignIn(id: String, userData: Dictionary<String, String>) {
+        DataService.ds.createFirebaseDBUSER(uid: id, userData: userData)
+        performSegue(withIdentifier: "goToTabberVC", sender: nil)
+    }
+
+    
+    
+    
+
 }
