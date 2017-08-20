@@ -13,6 +13,7 @@ class UserPostModel {
     private var _postKey: String! // KeyID ref
     private var _brand: String!
     private var _price: String!
+    private var _carryFee: String!
     private var _evnet: String!
     
     var postKey: String {
@@ -26,15 +27,18 @@ class UserPostModel {
     var price: String {
         return _price
     }
-    
+    var carryFee: String {
+        return _carryFee
+    }
     var evnet: String {
         return _evnet
     }
     
-    init(brand: String, price: String, evnet: String) {
+    init(brand: String, price: String, carryFee: String, evnet: String) {
 
         self._brand = brand
         self._price = price
+        self._carryFee = carryFee
         self._evnet = evnet
     }
     
@@ -48,10 +52,14 @@ class UserPostModel {
         if let price = postData["price"] as? String {
             self._price = price
         }
+        if let carryFee = postData["carryFee"] as? String {
+            self._carryFee = carryFee
+        }
         if let evnet = postData["evnet"] as? String {
             self._evnet = evnet
         }
         
     }
-
+    
+ 
 }

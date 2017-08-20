@@ -7,30 +7,51 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseStorage
 
-class PostVC: UIViewController {
+class PostVC: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
     @IBOutlet weak var brandField: UITextField!
     @IBOutlet weak var priceField: UITextField!
     @IBOutlet weak var carryFeeField: UITextField!
     @IBOutlet weak var eventNameField: UITextField!
-    
-    //ปุ่มจะไปเลือก category ใน array
-    
+    @IBOutlet weak var imageAdd: UIImageView!
     
     
-    
-    
-    
+    var imageSelected = false
+    var imagePicker: UIImagePickerController!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true
+        imagePicker.delegate = self
 
-        // Do any additional setup after loading the view.
     }
 
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
+            imageAdd.image = image
+            imageSelected = true
+        } else {
+            print ("GUIDE: A valide image wasn't selected")
+        }
+        imagePicker.dismiss(animated: true, completion: nil)
+    }
+
+    
+    @IBAction func addImagePressed(_ sender: Any) {
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+    
+    
+    
     @IBAction func postBtnPress(_ sender: Any) {
-        /*
+        
         let userID = Auth.auth().currentUser!.uid
         
         guard let brand = brandField.text, brand != "" else {
@@ -53,7 +74,7 @@ class PostVC: UIViewController {
             let metadata = StorageMetadata()
             metadata.contentType = "image/jpeg"
             
-            DataService.ds.REF_POST_IMAGES.child(imgUid).putData(imgData, metadata: metadata, completion: { (metadata, error) in
+            DataService.ds.REF_STORAGE_USERS_IMAGES.child(userID).child(imgUid).putData(imgData, metadata: metadata, completion: { (metadata, error) in
                 if error != nil {
                     print("GUIDE: Unable to upload image to Firebase Storage")
                 } else {
@@ -65,7 +86,7 @@ class PostVC: UIViewController {
                 }
             })
         }
-        */
+    
     }
     
     
@@ -73,30 +94,56 @@ class PostVC: UIViewController {
 //=======================================================
 // Section Fucntion
 //=======================================================
-    /*
+
     //Section160: Make post works
     func postToFirebase(uid:String ,imgUrl:String) {
         let post: Dictionary<String, Any> = [
             "uid": uid,
             "imageUrl": imgUrl,
             "brand": brandField.text!,
-            "price": priceField.text!          //How to post number??
+            "price": priceField.text!,
+            "carryFee": carryFeeField.text!,
+            "evnet": eventNameField.text!
+        ]
+
+        let userPost: Dictionary<String, Any> = [
+            "brand": brandField.text!,
+            "price": priceField.text!,
+            "carryFee": carryFeeField.text!,
+            "evnet": eventNameField.text!
         ]
         
-        let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
-        firebasePost.setValue(post)
+        let publicPostKey = DataService.ds.REF_DB_PUBLICPOST.childByAutoId().key
+        let publicPost = DataService.ds.REF_DB_PUBLICPOST.child(publicPostKey)
+        let userPostID = DataService.ds.REF_DB_USERS_POST.child(uid).child(publicPostKey)
+        publicPost.setValue(post)
+        userPostID.setValue(userPost)
+
+        
         
         imageSelected = false
         imageAdd.image = UIImage(named: "placeholder")
         brandField.text = ""
         priceField.text = ""
-        
+        eventNameField.text = ""
+        carryFeeField.text = ""
         //tableView.reloadData()
         
     }
     
-    
-    */
+    /*
+     if let brand = postData["brand"] as? String {
+     self._brand = brand
+     }
+     
+     if let price = postData["price"] as? String {
+     self._price = price
+     }
+     if let evnet = postData["evnet"] as? String {
+     self._evnet = evnet
+     }
+ 
+ */
     
     
     

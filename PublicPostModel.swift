@@ -32,6 +32,7 @@ class PublicPostModel {
     private var _imageUrl: String!
     private var _brand: String!
     private var _price: String!
+    private var _carryFee: String!
     private var _evnet: String!
 
     var postKey: String {
@@ -52,15 +53,20 @@ class PublicPostModel {
         return _price
     }
     
+    var carrtFee: String {
+        return _carryFee
+    }
+    
     var evnet: String {
         return _evnet
     }
     
-    init(uid: String, imageUrl: String, brand: String, price: String, evnet: String) {
+    init(uid: String, imageUrl: String, brand: String, price: String, carryFee:String, evnet: String) {
         self._uid = uid
         self._imageUrl = imageUrl
         self._brand = brand
         self._price = price
+        self._carryFee = carryFee
         self._evnet = evnet
     }
     
@@ -80,6 +86,9 @@ class PublicPostModel {
         
         if let price = postData["price"] as? String {
             self._price = price
+        }
+        if let carryFee = postData["carryFee"] as? String {
+            self._carryFee = carryFee
         }
         if let evnet = postData["evnet"] as? String {
             self._evnet = evnet

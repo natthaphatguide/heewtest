@@ -25,10 +25,10 @@ class DataService {
     private var _REF_DB_USERS_POST = DB_BASE.child("UserPost").child("User")
     private var _REF_DB_TRANSACTION_BUY = DB_BASE.child("Transaction").child("User").child("Buying")
     private var _REF_DB_TRANSACTION_SELL = DB_BASE.child("Transaction").child("User").child("Selling")
-    private var _REF_DB_PUBLICPOST = DB_BASE.child("PublicPost").child("User")
+    private var _REF_DB_PUBLICPOST = DB_BASE.child("PublicPost")
     
     //Storage Reference
-    private var _REF_STORAGE_USERS_IMAGES = STORAGE_BASE.child("User_Images")
+    private var _REF_STORAGE_USERS_IMAGES = STORAGE_BASE.child("User_Images").child("User")
     private var _REF_STORAGE_ADMIN_IMAGES = STORAGE_BASE.child("Admin_Images")
     //private var _REF_POST_IMAGES = STORAGE_BASE.child("-pics").child("users")
     

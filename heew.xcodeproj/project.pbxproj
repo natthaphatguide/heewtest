@@ -51,6 +51,7 @@
 		A13D4B1C1F3A1B8200AD824F /* PublicPostModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicPostModel.swift; sourceTree = "<group>"; };
 		A13D4B1E1F3A1DD500AD824F /* UserPostModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPostModel.swift; sourceTree = "<group>"; };
 		A13D4B201F3A1F3C00AD824F /* TransactionBuyingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionBuyingModel.swift; sourceTree = "<group>"; };
+		A1BA6AC31F49DCE3001F29F1 /* heew.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = heew.entitlements; sourceTree = "<group>"; };
 		A553C340649EA428FFA9C0EB /* Pods-heew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-heew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-heew/Pods-heew.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +106,7 @@
 		65BE4B931F36BEE9006442C7 /* heew */ = {
 			isa = PBXGroup;
 			children = (
+				A1BA6AC31F49DCE3001F29F1 /* heew.entitlements */,
 				65BE4B941F36BEE9006442C7 /* AppDelegate.swift */,
 				65BE4B9D1F36BEEA006442C7 /* LaunchScreen.storyboard */,
 				65BE4B981F36BEE9006442C7 /* Main.storyboard */,
@@ -194,7 +196,13 @@
 				TargetAttributes = {
 					65BE4B901F36BEE9006442C7 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = H5R9KSSS7M;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -422,7 +430,8 @@
 			baseConfigurationReference = A553C340649EA428FFA9C0EB /* Pods-heew.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_ENTITLEMENTS = heew/heew.entitlements;
+				DEVELOPMENT_TEAM = H5R9KSSS7M;
 				INFOPLIST_FILE = heew/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.heew.heew;
@@ -436,7 +445,8 @@
 			baseConfigurationReference = 65E9F9A93B047123E8918D35 /* Pods-heew.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_ENTITLEMENTS = heew/heew.entitlements;
+				DEVELOPMENT_TEAM = H5R9KSSS7M;
 				INFOPLIST_FILE = heew/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.heew.heew;
