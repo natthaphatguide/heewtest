@@ -120,7 +120,7 @@ class PostVC: UIViewController,UIImagePickerControllerDelegate,UINavigationContr
         userPostID.setValue(userPost)
 
         
-        
+        // Clear input
         imageSelected = false
         imageAdd.image = UIImage(named: "placeholder")
         brandField.text = ""
