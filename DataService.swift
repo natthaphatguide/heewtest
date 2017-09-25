@@ -21,9 +21,9 @@ class DataService {
     
     //Database Reference
     private var _REF_DB_BASE = DB_BASE
-    private var _REF_DB_USERS = DB_BASE.child("Users")
-    private var _REF_DB_USERS_POST = DB_BASE.child("UserPost").child("User")
-    private var _REF_DB_TRANSACTION_BUY = DB_BASE.child("Transaction").child("User").child("Buying")
+    private var _REF_DB_USERS = DB_BASE.child("UsersProfile") // User profile data
+    private var _REF_DB_USERS_POST = DB_BASE.child("UserPost").child("User") // User post data
+    private var _REF_DB_TRANSACTION_BUY = DB_BASE.child("Transaction").child("User").child("Buying") 
     private var _REF_DB_TRANSACTION_SELL = DB_BASE.child("Transaction").child("User").child("Selling")
     private var _REF_DB_PUBLICPOST = DB_BASE.child("PublicPost")
     

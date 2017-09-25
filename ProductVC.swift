@@ -11,6 +11,10 @@ import Firebase
 
 class ProductVC: UIViewController {
 
+    var posts = [PublicPostModel]()
+    
+    static var imageCache: NSCache<NSString, UIImage> = NSCache()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

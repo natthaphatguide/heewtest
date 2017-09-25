@@ -55,7 +55,7 @@ class UserPostModel {
         if let carryFee = postData["carryFee"] as? String {
             self._carryFee = carryFee
         }
-        if let evnet = postData["evnet"] as? String {
+        if let evnet = postData["event"] as? String {
             self._evnet = evnet
         }
         

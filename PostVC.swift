@@ -103,19 +103,19 @@ class PostVC: UIViewController,UIImagePickerControllerDelegate,UINavigationContr
             "brand": brandField.text!,
             "price": priceField.text!,
             "carryFee": carryFeeField.text!,
-            "evnet": eventNameField.text!
+            "event": eventNameField.text!
         ]
 
         let userPost: Dictionary<String, Any> = [
             "brand": brandField.text!,
             "price": priceField.text!,
             "carryFee": carryFeeField.text!,
-            "evnet": eventNameField.text!
+            "event": eventNameField.text!
         ]
         
-        let publicPostKey = DataService.ds.REF_DB_PUBLICPOST.childByAutoId().key
-        let publicPost = DataService.ds.REF_DB_PUBLICPOST.child(publicPostKey)
-        let userPostID = DataService.ds.REF_DB_USERS_POST.child(uid).child(publicPostKey)
+        let publicPostKey   =     DataService.ds.REF_DB_PUBLICPOST.childByAutoId().key
+        let publicPost      =     DataService.ds.REF_DB_PUBLICPOST.child(publicPostKey)
+        let userPostID      =     DataService.ds.REF_DB_USERS_POST.child(uid).child(publicPostKey)
         publicPost.setValue(post)
         userPostID.setValue(userPost)
 
