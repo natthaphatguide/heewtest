@@ -26,6 +26,7 @@
 		A13D4B1F1F3A1DD500AD824F /* UserPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13D4B1E1F3A1DD500AD824F /* UserPostModel.swift */; };
 		A13D4B211F3A1F3C00AD824F /* TransactionBuyingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13D4B201F3A1F3C00AD824F /* TransactionBuyingModel.swift */; };
 		A1E62A2F1F79785A0075BC7B /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E62A2E1F79785A0075BC7B /* ProductCell.swift */; };
+		A1FBC9411F990EF1002E4C01 /* ProductDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FBC9401F990EF1002E4C01 /* ProductDetailVC.swift */; };
 		E41144FB0BBF00884679CDBD /* Pods_heew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD577F9F72C1622C87B260F /* Pods_heew.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		A13D4B201F3A1F3C00AD824F /* TransactionBuyingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionBuyingModel.swift; sourceTree = "<group>"; };
 		A1BA6AC31F49DCE3001F29F1 /* heew.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = heew.entitlements; sourceTree = "<group>"; };
 		A1E62A2E1F79785A0075BC7B /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		A1FBC9401F990EF1002E4C01 /* ProductDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailVC.swift; sourceTree = "<group>"; };
 		A553C340649EA428FFA9C0EB /* Pods-heew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-heew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-heew/Pods-heew.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +81,7 @@
 				658A81CB1F38312800234035 /* PostVC.swift */,
 				658A81C91F38311F00234035 /* NotificationVC.swift */,
 				658A81CD1F38313A00234035 /* ProfileVC.swift */,
+				A1FBC9401F990EF1002E4C01 /* ProductDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				658A81CA1F38311F00234035 /* NotificationVC.swift in Sources */,
 				A13D4B1F1F3A1DD500AD824F /* UserPostModel.swift in Sources */,
 				A1E62A2F1F79785A0075BC7B /* ProductCell.swift in Sources */,
+				A1FBC9411F990EF1002E4C01 /* ProductDetailVC.swift in Sources */,
 				A13D4B211F3A1F3C00AD824F /* TransactionBuyingModel.swift in Sources */,
 				A13D4B1B1F3A15B300AD824F /* User.swift in Sources */,
 			);

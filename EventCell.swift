@@ -6,6 +6,7 @@
 //  Copyright © 2560 heew. All rights reserved.
 //
 
+// Note: Pending
 import UIKit
 
 class EventCell: UITableViewCell {
